@@ -1,0 +1,29 @@
+PODS:
+  - Beacon (1.0.2)
+  - Flutter (1.0.0)
+  - flutter_help_scout (0.0.1):
+    - Beacon
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_help_scout (from `.symlinks/plugins/flutter_help_scout/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Beacon
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_help_scout:
+    :path: ".symlinks/plugins/flutter_help_scout/ios"
+
+SPEC CHECKSUMS:
+  Beacon: 9797668169276cc88f416c202977a6152698e8e0
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_help_scout: 618ff38f076c41d5786d48a2c777e80f4d39702a
+
+PODFILE CHECKSUM: b6a0a141693093b304368d08511b46cf3d1d0ac5
+
+COCOAPODS: 1.8.4
