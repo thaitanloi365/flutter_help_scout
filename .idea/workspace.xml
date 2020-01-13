@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad9b13a0-3dd4-4f55-9282-b90a02f8b200" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/loi/helpscout/flutter_help_scout/FlutterHelpScoutPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/loi/helpscout/flutter_help_scout/FlutterHelpScoutPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/ios/Classes/SwiftFlutterHelpScoutPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/ios/Classes/SwiftFlutterHelpScoutPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/lib/flutter_help_scout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/lib/flutter_help_scout.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_help_scout/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterHelpScoutPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterHelpScoutPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_help_scout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_help_scout.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -30,7 +22,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_29" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/flutter_help_scout.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -76,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/loi/helpscout/flutter_help_scout/FlutterHelpScoutPlugin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="52" column="69" lean-forward="true" selection-start-line="52" selection-start-column="69" selection-end-line="52" selection-end-column="69" />
+            <state relative-caret-position="499">
+              <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -96,7 +88,9 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-179" />
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -135,25 +129,7 @@
             <path>
               <item name="flutter_help_scout" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_help_scout" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_help_scout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_help_scout" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_help_scout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_help_scout" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="flutter_help_scout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_help_scout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_help_scout" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,13 +203,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/android/local.properties" />
-    <entry file="file://$PROJECT_DIR$/lib/flutter_help_scout.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
@@ -261,9 +230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -273,8 +239,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/loi/helpscout/flutter_help_scout/FlutterHelpScoutPlugin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="52" column="69" lean-forward="true" selection-start-line="52" selection-start-column="69" selection-end-line="52" selection-end-column="69" />
+        <state relative-caret-position="499">
+          <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_help_scout.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
     </entry>

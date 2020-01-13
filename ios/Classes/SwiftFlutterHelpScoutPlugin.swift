@@ -24,6 +24,7 @@ public class SwiftFlutterHelpScoutPlugin: NSObject, FlutterPlugin, HSBeaconDeleg
         }
     }
     
+        
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         if(call.method == "init") {
 
