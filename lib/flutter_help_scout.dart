@@ -7,9 +7,12 @@ class FlutterHelpScout {
   static const MethodChannel _channel =
       const MethodChannel('flutter_help_scout');
 
-  static Future<void> init(String beaconId) async {
+  static Future<void> init(String beaconId,
+      {bool clearAttributes = true, String title}) async {
     return await _channel.invokeMethod('init', <String, dynamic>{
       "id": beaconId,
+      "clearAttributes": clearAttributes,
+      "title": title,
     });
   }
 

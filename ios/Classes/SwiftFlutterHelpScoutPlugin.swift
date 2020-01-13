@@ -1,7 +1,7 @@
 import Flutter
 import UIKit
 import Beacon
-public class SwiftFlutterHelpScoutPlugin: NSObject, FlutterPlugin {
+public class SwiftFlutterHelpScoutPlugin: NSObject, FlutterPlugin, HSBeaconDelegate {
     private var settings: HSBeaconSettings!;
     
     public static func register(with registrar: FlutterPluginRegistrar) {
@@ -10,8 +10,23 @@ public class SwiftFlutterHelpScoutPlugin: NSObject, FlutterPlugin {
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
     
+    public func prefill(_ form: HSBeaconContactForm) {
+        guard let user = HSBeacon.currentUser() else {
+            return
+        }
+        
+        if let email = user.email {
+            form.email = email
+        }
+        
+        if let name = user.name {
+            form.name = name
+        }
+    }
+    
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         if(call.method == "init") {
+
             guard let args = call.arguments as? Dictionary<String, Any> else {
                 result(FlutterError(code: "5000", message: "Invalid arguments", details: nil))
                 return
@@ -22,8 +37,19 @@ public class SwiftFlutterHelpScoutPlugin: NSObject, FlutterPlugin {
                 return
             }
             
+             
             settings = HSBeaconSettings(beaconId: id)
-           
+
+
+            if let clearAttributes = args["clearAttributes"] as? Bool, clearAttributes == true {
+                HSBeacon.currentUser()?.clearAttributes();
+            }
+
+            if let title = args["title"] as? String, title != "" {
+                settings.beaconTitle = title
+            }
+            
+
             result(String(format: "Init susccess: id = %s",id));
             
         }else if(call.method == "open") {

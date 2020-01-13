@@ -27,22 +27,32 @@ class FlutterHelpScoutPlugin(private var registrar: Registrar): MethodCallHandle
 
   override fun onMethodCall(call: MethodCall, result: Result) {
     if (call.method == "init") {
-      var id = call.argument<String>("id")
-      if(id == null) {
+      var id = call.argument<String>("id") ?: ""
+      var clearAttributes = call.argument<Boolean>("clearAttributes") ?: true
+
+      if(id == "") {
         result.error("4220","Beacon id is required",null)
       }
-      
 
       Beacon.Builder()
-                .withBeaconId(id!!)
+                .withBeaconId(id)
                 .withLogsEnabled(true)
-                .build()  
+                .build()
+
+      if(clearAttributes) {
+        Beacon.clearAttributes()
+      }
 
       result.success("Beacon init successfully: " + id!!)
     } else if(call.method == "open") {
-      BeaconActivity.open(this.registrar.activity())
-      print("Open settings susccess")
-      result.success("Open settings susccess");
+      if(this.registrar != null && this.registrar.activity() != null) {
+        BeaconActivity.open(this.registrar.activity())
+        print("Open settings susccess")
+        result.success("Open settings susccess");
+      }else {
+        result.error("5000","Can't get this.registrar.activity",null)
+      }
+
     } else if(call.method == "identify") {
       var email = call.argument<String>("email")
       if(email == null) {
